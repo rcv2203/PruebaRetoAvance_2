@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="blue_01">#005566</color>
+    <color name="blue_darling">#00C1EA</color>
+    <color name="green">#00BB74</color>
+    <color name="green_200">#75FF85</color>
+    <color name="grey">#FFC899</color>
+    <color name="yellow">#CEAD00</color>
+    <color name="green_600">#295F48</color>
+    <color name="green_300">#56C596</color>
+
+    <color name="button_background">#75FF85</color>
+
+
+    <!--
+    295F48 al 30%
+    56C596  al 100# -->
+</resources>

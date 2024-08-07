@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mensaje">
+        Potencie sus instalaciones deportivas con energía sostenible aproveche la energía del sol; con <b>Solar Sports.</b>
+    </string>
+
+    <string name="categ">
+        <font size="30"><b>Categorías</b></font><br/>"\n"
+        Seleccione la categoría de instalación solar deportiva para seguir.
+    </string>
+    <string name="estadisticas">
+        <font size="30"><b>Estadisticas</b></font><br/>"\n"
+        Consulta estadísticas detalladas y comparativas de instalaciones deportes solares
+    </string>
+    <string name="beneficios">
+        <font size="30"><b>Beneficios</b></font><br/>"\n"
+        Explora los beneficios económicos de las instalaciones
+    </string>
+</resources>

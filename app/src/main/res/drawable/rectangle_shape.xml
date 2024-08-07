@@ -1,0 +1,10 @@
+<!-- res/drawable/rectangle_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FF000000"/> <!-- Color de fondo -->
+    <size
+        android:width="60dp"
+        android:height="60dp"/> <!-- Altura del cuadrado -->
+    <stroke
+        android:width="2dp"
+        android:color="#FF000000"/>
+</shape>

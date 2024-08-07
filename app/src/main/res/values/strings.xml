@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Solar "\n"Sports</string>
+
+    <string name="panel">Panel</string>
+
+    <string name="login">Sign In</string>
+    <string name="register">Sign UP</string>
+
+    <string name="email">E m a i l</string>
+    <string name="ingrese_email">Ingrese el email</string>
+    <string name="pass">P a s s w o r d</string>
+    <string name="ingrese_pass">Ingrese su password</string>
+
+    <!--Sign Up-->
+    <string name="name">N o m b r e</string>
+    <string name="surname">A p e l l i d o</string>
+    <string name="phone">T e l e f o n o</string>
+    <string name="confirm_pass">Confirmar Password</string>
+    <string name="ingrese_name">Ingrese su nombre</string>
+
+    <!--Pantalla menu-->
+    <string name="categorias">Categorias</string>
+
+    <string name="regitrar_categorias">Registrar categorias</string>
+    <string name="datos_estadio">Datos del estadio</string>
+    <string name="presupuesto_estadio">Presupuesto estadio</string>
+    <string name="datos_">Datos del estadio</string>
+    <!--Pantalla registrar estadios-->
+    <string name="paneles">Paneles</string>
+    <string name="valor">Valor/h</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="mes">Mes</string>
+    <string name="select_date">Seleccione la fecha</string>
+    <string name="enviar_datos">Enviar Datos</string>
+    <string name="delete_datos">Eliminar Datos</string>
+    <string name="estadistica_estadio">Esatadisticas de Estadios</string>
+    <string name="lat_long">Lat/Lon</string>
+    <string name="name_">Nombre</string>
+
+    <!--activity_presupuesto_estadio.xml-->
+
+
+    <!--Datos estadios "Estadisticas estadio"-->
+    <string name="n_maracana"><b>Maracana</b></string>
+    <string name="n_campin"><b>Campin"\n"Bogota</b></string>
+    <string name="ahorro_energia"><b>Ahorro de energía</b></string>
+    <string name="cero_contaminacion"><b>Cero emisiones "\n"contaminantes</b></string>
+    <string name="ener_sostenible"><b>Es una energía"\n"renovable sostenible</b></string>
+    <string name="direccion"><b>Direccion: </b></string>
+
+    <string name="consumo_mensual"><b>Consumo mensual</b></string>
+    <string name="establecimiento_p1"><b>Establecimiento P 1 item_data</b></string>
+    <string name="establecimiento"><b>Establecimiento P 2 item_detail</b></string>
+    <string name="consumo_hora"><b>Consumo hora</b></string>
+    <string name="consumo_anual"><b>Consumo anual</b></string>
+    <string name="valor_hora"><b>Valor Hora</b></string>
+    <string name="valor_dia"><b>Valor día</b></string>
+    <string name="kwh"><b>kWh</b></string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="cantidad_paneles"><b>Cantidad de "\n"paneles</b></string>
+</resources>
