@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,6 +8,7 @@
     android:background="@color/blue_darling"
     android:padding="8dp"
     tools:context=".RegisterActivity">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,12 +17,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingClass,MissingConstraints">
+
         <LinearLayout
             android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
+
             <LinearLayout
                 android:id="@+id/layout2"
                 android:layout_width="match_parent"
@@ -31,6 +33,7 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables,UselessParent">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="120dp"
@@ -39,6 +42,7 @@
                     android:contentDescription="@string/panel"
                     android:src="@drawable/panel_solar"
                     tools:ignore="ImageContrastCheck" />
+
                 <TextView
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
@@ -54,16 +58,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="16dp"
-                    android:backgroundTint="@color/green">
+                    android:backgroundTint="@color/green"
+                    app:cardCornerRadius="16dp">
+
                     <LinearLayout
                         android:id="@+id/layout4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
@@ -86,12 +93,14 @@
                             android:padding="10dp"
                             tools:ignore="SpeakableTextPresentCheck" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/layout5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="70dp"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
@@ -114,12 +123,14 @@
                             android:padding="10dp"
                             tools:ignore="SpeakableTextPresentCheck" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/layout6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="150dp"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
@@ -142,12 +153,14 @@
                             android:padding="10dp"
                             tools:ignore="SpeakableTextPresentCheck" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/layout7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="230dp"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
@@ -201,6 +214,7 @@
                             tools:ignore="SpeakableTextPresentCheck" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/layout9"
                         android:layout_width="match_parent"
@@ -229,6 +243,7 @@
                             android:minHeight="48dp"
                             android:padding="10dp"
                             tools:ignore="SpeakableTextPresentCheck" />
+
                         <TextView
                             android:id="@+id/errors"
                             android:layout_width="match_parent"
@@ -271,9 +286,7 @@
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
-
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
         </LinearLayout>

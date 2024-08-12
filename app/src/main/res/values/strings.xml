@@ -49,8 +49,7 @@
     <string name="direccion"><b>Direccion: </b></string>
 
     <string name="consumo_mensual"><b>Consumo mensual</b></string>
-    <string name="establecimiento_p1"><b>Establecimiento P 1 item_data</b></string>
-    <string name="establecimiento"><b>Establecimiento P 2 item_detail</b></string>
+    <string name="establecimiento"><b>Establecimiento</b></string>
     <string name="consumo_hora"><b>Consumo hora</b></string>
     <string name="consumo_anual"><b>Consumo anual</b></string>
     <string name="valor_hora"><b>Valor Hora</b></string>
@@ -58,4 +57,20 @@
     <string name="kwh"><b>kWh</b></string>
     <string name="btn_calcular">Calcular</string>
     <string name="cantidad_paneles"><b>Cantidad de "\n"paneles</b></string>
+    <string name="area_paneles">Area para "\n"paneles</string>
+    <string name="ingres_name_estab">Ingrese el nombre del establecimiento</string>
+    <string name="ingres_consumo_mensual">Ingrese kWh</string>
+
+    <string name="texto_fragmen">Texto del fragmen</string>
+    <string name="mostrar_ocultar">Mostrar / Ocultar texto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_fragment_cero_emisiones">Cero Emisiones</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guardar_datos_datail">Guardar datos</string>
+    <string name="tip_videos">Descripción video</string>
+    <string name="next">Next</string>
+    <string name="previous"> Previous</string>
+
+
 </resources>

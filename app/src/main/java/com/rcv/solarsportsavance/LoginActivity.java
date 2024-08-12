@@ -22,7 +22,6 @@ public class LoginActivity extends AppCompatActivity {
     Button btn_registrarse, btn_login;
     ImageView btn_linkedIn, btn_google, btn_facebock;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,21 +48,21 @@ public class LoginActivity extends AppCompatActivity {
 
 
         btn_facebock.setOnClickListener(v -> {
-            String url = "https://es-la.facebook.com/reg/";
+            String url = "https://es-la.facebook.com/login/device-based/regular/login/";
             Uri uri = Uri.parse(url);
             Intent intentBtnFaceboock = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intentBtnFaceboock);
         });
 
         btn_google.setOnClickListener(v -> {
-            String url = "https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&osid=1&passive=1209600&service=mail&ifkv=AdF4I766L4YYkDsmSk-xsrgGwjQeha0nS2wdSr-bP8n28nS0tGrm9vRgYIOC0xu2jfhzpWGM6QSfnw&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+            String url = "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdF4I76BwfZ8eSsCNLUOG1UuNuV6-5niwx24S2Dg05sUzcK867fzrDiVlJ-rAWa-zF8e-OBc2oIG9A&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1159488193%3A1723324778969131&ddm=0";
             Uri uri = Uri.parse(url);
             Intent intentBtnGoogle = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intentBtnGoogle);
         });
 
         btn_linkedIn.setOnClickListener(v -> {
-            String url = "https://www.linkedin.com/signup?_l=es";
+            String url = "https://www.linkedin.com/home";
             Uri uri = Uri.parse(url);
             Intent intentBtnIn = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intentBtnIn);

@@ -16,4 +16,26 @@
         <font size="30"><b>Beneficios</b></font><br/>"\n"
         Explora los beneficios económicos de las instalaciones
     </string>
+    <string name="descripcion_consumo_mensual">
+        &#32;&#32;&#32;&#32;<b>Producción de Energía:</b>"\n""\n"
+        • Calcula la producción de energía mensual de un panel solar basándote en su capacidad y las horas de sol disponibles."\n"
+        • Determinamos cuántos paneles solares son necesarios para cubrir el consumo mensual total."\n"
+        • Calculamos el consumo de energía por hora entre el número total de horas en el mes"\n"
+        • Calculamos el número de paneles necesarios y el área total requerida.
+    </string>
+
+    <string name="text_beneficios">Beneficios</string>
+    <string name="otros_beneficios">
+        Pregunta por los beneficios tributarios."\n"
+        Conozca los beneficios económicos."\n"Sabía usted que te puedes ahorrar hasta un 70 % en el valor del consumo de la energía"\n""\n"
+        <b>Reducción de Costos de Energía:</b> "\n"A largo plazo, la energía solar puede reducir significativamente tus facturas de electricidad.
+        Los costos de operación y mantenimiento son bajos."\n""\n"
+        <b>Independencia Energética:</b> "\n"Al generar tu propia energía, puedes reducir tu dependencia de las redes eléctricas y
+        de las fluctuaciones de precios en el mercado energético."\n"
+
+    </string>
+
+
+
+
 </resources>

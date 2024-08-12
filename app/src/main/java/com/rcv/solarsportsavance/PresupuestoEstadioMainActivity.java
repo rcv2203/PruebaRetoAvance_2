@@ -35,7 +35,7 @@ public class PresupuestoEstadioMainActivity extends AppCompatActivity {
                 "Consumo Mensual: " + consumoMensual + "\n" +
                 "Consumo Anual: " + consumoAnual + "\n" +
                 "Valor Hora: " + valorHora + "\n" +
-                "Dirección: " + direccion  + "\n" +
+                "Dirección: " + direccion + "\n" +
                 "Fecha: " + fecha;
 
         datosTextView.setText(datosString);

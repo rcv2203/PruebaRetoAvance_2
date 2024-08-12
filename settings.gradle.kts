@@ -21,4 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "SolarSportsAvance"
 include(":app")
- 
+
+
+
+

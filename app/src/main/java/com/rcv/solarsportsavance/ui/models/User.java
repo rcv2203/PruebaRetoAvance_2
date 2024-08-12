@@ -14,16 +14,12 @@ public class User extends Application {
     public String email;
     public Long phone;
     public String password;
-
-
     public User() {
         this.name = "";
         this.surName = "";
         this.email = "";
         this.phone = 0L;
         this.password = "";
-
-
     }
 
     public User(String id, String name, String surName, String email, Long phone, String password) {
@@ -35,7 +31,6 @@ public class User extends Application {
         this.password = password;
 
     }
-
 
     public String objetcToJSON (){
 

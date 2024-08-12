@@ -1,17 +1,10 @@
 package com.rcv.solarsportsavance;
 
 import android.annotation.SuppressLint;
-import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,7 +20,7 @@ public class ListActivity extends AppCompatActivity {
     private TextView consumoMensual;
     private TextView consumoPorHora;
     private TextView numeroDePaneles;
-
+    private TextView areaParaPaneles;
 
     @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
@@ -42,7 +35,7 @@ public class ListActivity extends AppCompatActivity {
         consumoMensual = findViewById(R.id.textViewConsumoMensual);
         consumoPorHora = findViewById(R.id.textViewDetailConsumoHora);
         numeroDePaneles = findViewById(R.id.textViewDetailNumeroPaneles);
-
+        areaParaPaneles = findViewById(R.id.textViewDetailAreaPaneles);
 
         // Obtener los datos del Intent
         Intent intent = getIntent();
@@ -50,10 +43,11 @@ public class ListActivity extends AppCompatActivity {
         double consumoMensual_ = intent.getDoubleExtra("consumo mensual", 0);
         double consumoPorHora_ = intent.getDoubleExtra("consumo por hora" , 0);
         double numeroDePaneles_ = intent.getDoubleExtra("numero de paneles", 0);
+        double areaParaPaneles_ = intent.getDoubleExtra("area para paneles", 0);
 
 
         itemList = new ArrayList<>();
-        itemList.add(new MyItem(name, consumoMensual_, consumoPorHora_, numeroDePaneles_));
+        itemList.add(new MyItem(name, consumoMensual_, consumoPorHora_, numeroDePaneles_, areaParaPaneles_));
 
 
         myAdapter = new MyAdapter(itemList, item -> {
@@ -62,13 +56,11 @@ public class ListActivity extends AppCompatActivity {
             detailIntem.putExtra("consumo mensual", item.getConsumoMensual());
             detailIntem.putExtra("consumo por hora", item.getConsumoPorHora());
             detailIntem.putExtra("numero de paneles" ,item.getNumeroDePaneles());
+            detailIntem.putExtra("area para paneles", item.getAreaDelPanel());
             startActivity(detailIntem);
         });
 
         recyclerView.setAdapter(myAdapter);
-
-
-        // Calcular y mostrar el total
 
     }
 

@@ -36,12 +36,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MyItem item = itemList.get(position);
         holder.textViewName.setText(item.getName());
-        holder.textViewConsumoMensual.setText(String.valueOf(item.getConsumoMensual()));
-        holder.textViewConsumoAnual.setText(String.valueOf(item.getConsumoAnual()));
-        holder.textViewConsumoHora.setText(String.valueOf(item.getConsumoPorHora()));
-        holder.textViewNumeroPaneles.setText(String.valueOf(item.getNumeroDePaneles()));
-
-
+        holder.textViewConsumoMensual.setText(String.format("%.2f kWh ", item.getConsumoMensual()));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,20 +55,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView textViewName;
         TextView textViewConsumoMensual;
-        TextView textViewConsumoAnual;
-        TextView textViewConsumoHora;
-        TextView textViewNumeroPaneles;
-
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewName = itemView.findViewById(R.id.textViewName);
             textViewConsumoMensual = itemView.findViewById(R.id.textViewConsumoMensual);
-            textViewConsumoAnual = itemView.findViewById(R.id.textViewConsumoAnual);
-            textViewConsumoHora = itemView.findViewById(R.id.textViewConsumoHora);
-            textViewNumeroPaneles = itemView.findViewById(R.id.textViewNumeroPaneles);
-
         }
     }
 }

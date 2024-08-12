@@ -18,6 +18,7 @@ import java.io.IOException;
 public class FormActivity extends AppCompatActivity {
     private EditText editTextName;
     private EditText editTextConsumoMensual;
+
 //    private EditText editTextConsumoAnual;
 //    private EditText editTextConsumoHora;
 //    private EditText editTextCantidaPaneles;
@@ -31,37 +32,28 @@ public class FormActivity extends AppCompatActivity {
 
         editTextName = findViewById(R.id.editTextName);
         editTextConsumoMensual = findViewById(R.id.editTextConsumoMensual);
+
 //        editTextConsumoAnual = findViewById(R.id.editTextConsumoAnual);
 //        editTextConsumoHora = findViewById(R.id.editTextConsumoHora);
 //        editTextCantidaPaneles = findViewById(R.id.editTextCantidaPaneles);
 
         buttonSubmit = findViewById(R.id.buttonSubmit);
-
-
         buttonSubmit.setOnClickListener(v -> submitData());
     }
 
     private void submitData() {
         String name = editTextName.getText().toString();
         String consumoMensualStr = editTextConsumoMensual.getText().toString();
+
 //        String consumoAnualStr = editTextConsumoAnual.getText().toString();
 //        String consumoHoraStr = editTextConsumoHora.getText().toString();
 //        String cantidadPanelesStr = editTextCantidaPaneles.getText().toString();
-
-
         if (name.isEmpty() || consumoMensualStr.isEmpty()) {
             Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
             return;
         }
 
         double consumoMensual = Double.parseDouble(consumoMensualStr);
-//        double consumoAnual = Double.parseDouble(consumoAnualStr);
-//        double consumoHora = Double.parseDouble(consumoHoraStr);
-//        double cantidadPaneles = Double.parseDouble(cantidadPanelesStr);
-
-
-        // Calcular el consumo por hora
-
 
         // Guardar datos en archivo
         saveDataToFile(name, consumoMensual);
@@ -70,10 +62,6 @@ public class FormActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListActivity.class);
         intent.putExtra("name", name);
         intent.putExtra("consumo mensual", consumoMensual);
-//        intent.putExtra("consumo anual", consumoAnual);
-//        intent.putExtra("consumo por hora", consumoHora);
-//        intent.putExtra("numero de paneles", cantidadPaneles);
-
 
         startActivity(intent);
     }
